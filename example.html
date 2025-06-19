@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Exemplos NuCSS</title>
+	<link rel="stylesheet" href="nu.css" />
+</head>
+<body>
+
+	<!-- HEADER E NAVEGAÇÃO -->
+	<header>
+	<a href="#" class="logo">
+		<img src="https://picsum.photos/100/40" alt="Logo" />
+	</a>
+	<nav>
+		<ul>
+		<li><a href="#forms">Formulários</a></li>
+		<li><a href="#text">Texto</a></li>
+		<li><a href="#media">Mídia</a></li>
+		<li><a href="#tables">Tabelas</a></li>
+		<li><a href="#interactive">Interativo</a></li>
+		<li><a href="#others">Outros</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<main>
+		<!-- Artigo de Exemplo -->
+		<section id="articles">
+			<h2>Artigos</h2>
+			<article>
+			<header>
+				<h1>Explorando o NuCSS</h1>
+				<p><small>Por Gabriel Masson em <time datetime="2025-06-19">19 de junho de 2025</time></small></p>
+			</header>
+
+			<p>O <strong>NuCSS</strong> é um framework de utilitários que estiliza diretamente os elementos HTML5, aproveitando variáveis CSS e resets inteligentes para garantir consistência e responsividade.</p>
+
+			<h2>Vantagens</h2>
+			<ul>
+				<li>Sem dependência de classes — estiliza tags semânticas.</li>
+				<li>Otimizável via variáveis de tema em <code>:root</code>.</li>
+				<li>Compatível com componentes dinâmicos (Canvas, SVG, Vídeo, etc.).</li>
+			</ul>
+
+			<h2>Exemplo de Código</h2>
+			<pre><code>function exemploNuCSS() {
+			console.log('NuCSS no seu projeto!');
+		}</code></pre>
+
+			<footer>
+				<p><small>Tags: <a href="#!">NuCSS</a>, <a href="#!">HTML5</a>, <a href="#!">CSS Variables</a></small></p>
+			</footer>
+			</article>
+		</section>
+
+		<!-- FORMULÁRIOS -->
+		<section id="forms">
+			<h2>Formulários – Todos os Inputs</h2>
+			<form>
+			<fieldset>
+				<legend>Exemplo Completo de Formulário</legend>
+
+				<br>
+				<label for="txt">Texto:</label>
+				<input type="text" id="txt" placeholder="Ex.: Gabriel" autofocus />
+
+				<br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" placeholder="seu@mail.com" />
+
+				<br>
+				<label for="tel">Telefone:</label>
+				<input type="tel" id="tel" placeholder="(11) 91234-5678" />
+
+				<br>
+				<label for="url">URL:</label>
+				<input type="url" id="url" placeholder="https://example.com" />
+
+				<br>
+				<label for="date">Data:</label>
+				<input type="date" id="date" />
+
+				<br>
+				<label for="color">Cor:</label>
+				<input type="color" id="color" value="#007bff" />
+
+				<br>
+				<label for="range">Range (0–100):</label>
+				<input type="range" id="range" min="0" max="100" value="50" />
+
+				<br>
+				<label for="file">Arquivo:</label>
+				<input type="file" id="file" />
+
+				<br>
+				<label>Checkbox:</label>
+				<label><input type="checkbox" name="chk" /> Opção</label>
+				<label><input type="checkbox" name="chk" /> Opção</label>
+				<label><input type="checkbox" name="chk" disabled /> Desabilitado</label>
+
+				<br>
+				<label>Radio:</label>
+				<label><input type="radio" name="rdo" /> Opção A</label>
+				<label><input type="radio" name="rdo" /> Opção B</label>
+				<label><input type="radio" name="rdo" disabled /> Opção C (desab.)</label>
+
+				<br>
+				<label for="select">Select:</label>
+				<select id="select">
+				<optgroup label="Grupo 1">
+					<option>Item 1</option>
+					<option>Item 2</option>
+					<option disabled>Item 3 (desab.)</option>
+				</optgroup>
+				<optgroup label="Grupo 2">
+					<option>Item 4</option>
+				</optgroup>
+				</select>
+
+				<br>
+				<label for="textarea">Textarea:</label>
+				<textarea id="textarea" rows="3" placeholder="Digite aqui..."></textarea>
+
+				<br>
+				<div class="buttons">
+				<button type="submit">Enviar</button>
+				<button type="reset">Limpar</button>
+				<input type="button" value="Botão Input" />
+				<button disabled>Botão Desabilitado</button>
+				</div>
+			</fieldset>
+			</form>
+		</section>
+
+		<!-- TEXTO E TIPOGRAFIA -->
+		<section id="text">
+			<h2>Tipografia e Semântica</h2>
+			<h1>Título H1</h1>
+			<h2>Título H2</h2>
+			<h3>Título H3</h3>
+			<p>Parágrafo com <strong>negrito</strong>, <em>itálico</em>, <u>sublinhado</u>, <mark>marca</mark>, <del>tachado</del> e <ins>inserido</ins>.</p>
+			<p>Abreviação: <abbr title="HyperText Markup Language">HTML</abbr>; Definição: <dfn>DFN</dfn>.</p>
+			<p>Pequeno: <small>texto menor</small>; Expoente: x<sup>2</sup>; Índice: H<sub>2</sub>O.</p>
+			<p>Teclas: <kbd>Ctrl</kbd> + <kbd>V</kbd>; Saída: <samp>Operação concluída</samp>.</p>
+			<blockquote cite="https://pt.wikipedia.org/wiki/Leonardo_da_Vinci">
+			A simplicidade é o último grau de sofisticação.
+			<footer>— Leonardo da Vinci</footer>
+			</blockquote>
+			<hr />
+		</section>
+
+		<!-- MULTIMÍDIA -->
+		<section id="media">
+			<h2>Imagens, Vídeo e Áudio</h2>
+			<figure>
+			<img src="https://picsum.photos/600/300" alt="Paisagem aleatória" />
+			<figcaption>Figura responsiva</figcaption>
+			</figure>
+			<video controls width="400">
+			<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+			Seu navegador não suporta vídeo.
+			</video>
+			<audio controls>
+			<source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+			Seu navegador não suporta áudio.
+			</audio>
+		</section>
+
+		<!-- TABELAS -->
+		<section id="tables">
+			<h2>Tabelas</h2>
+			<table>
+			<caption>Preços de Produtos</caption>
+			<thead>
+				<tr><th>Produto</th><th>Qtd</th><th>Preço</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>Bolsa</td><td>10</td><td>R$150,00</td></tr>
+				<tr><td>Necessaire</td><td>20</td><td>R$50,00</td></tr>
+			</tbody>
+			<tfoot>
+				<tr><td colspan="3">* Sujeito a alteração</td></tr>
+			</tfoot>
+			</table>
+		</section>
+
+		<!-- INTERATIVO E ESTADOS -->
+		<section id="interactive">
+			<h2>Estados Interativos</h2>
+			<p>
+			<a href="#!" id="link-normal">Link Normal</a> |
+			<a href="https://example.com" target="_blank">Link Visitado (após clicar)</a> |
+			<a href="#!" tabindex="0">Link Foco (TAB para ver)</a>
+			</p>
+			<p>
+			<button>Hover / Active</button>
+			<button disabled>Disabled</button>
+			</p>
+			<p>
+			<label for="focus-input">Input Focus:</label>
+			<input type="text" id="focus-input" placeholder="Clique ou TAB aqui" />
+			</p>
+			<p>
+			<label for="prog">Progress:</label>
+			<progress id="prog" value="30" max="100">30%</progress>
+			</p>
+			<p>
+			<label for="meter">Meter:</label>
+			<meter id="meter" value="0.7">70%</meter>
+			</p>
+			<details>
+			<summary>Exibir detalhes</summary>
+			<p>Conteúdo extra visível quando aberto.</p>
+			</details>
+			<details open>
+			<summary>Detalhes já abertos</summary>
+			<p>Bloco iniciado em estado aberto.</p>
+			</details>
+		</section>
+
+		<!-- OUTROS ELEMENTOS HTML5 -->
+		<section id="others">
+			<h2>Outros Elementos</h2>
+
+			<aside>
+				<h3>Aside</h3>
+				<p>Conteúdo complementar em sidebar.</p>
+			</aside>
+
+			<h3>Canvas</h3>
+			<figure>
+				<figcaption>Canvas Dinâmico</figcaption>
+				<canvas id="canvasDemo" width="200" height="100" style="border:1px solid #ccc;">
+					Seu navegador não suporta canvas.
+				</canvas>
+			</figure>
+
+			<h3>SVG</h3>
+			<svg width="120" height="80">
+				<rect width="100" height="50" x="10" y="15" stroke="green" fill="lightgreen" stroke-width="2"/>
+			</svg>
+
+			<h3>Endereço</h3>
+			<address>
+				Desenvolvedor NuCSS<br />
+				Rua Exemplo, 123 – São Paulo, SP<br />
+				<a href="mailto:contato@nucss.dev">contato@nucss.dev</a>
+			</address>
+
+			<h3>Tempo</h3>
+			<time datetime="2025-06-19T00:00">19 de junho de 2025</time>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>&copy; 2025 NuCSS. Todos os direitos reservados.</p>
+	</footer>
+
+	<!-- Script Demo para Canvas -->
+	<script>
+	const canvas = document.getElementById('canvasDemo');
+	const ctx = canvas.getContext('2d');
+	ctx.fillStyle = '#007bff';
+	ctx.fillRect(0, 0, 200, 100);
+	ctx.fillStyle = '#fff';
+	ctx.font = '16px sans-serif';
+	ctx.fillText('NuCSS Canvas', 20, 55);
+	</script>
+</body>
+</html>
